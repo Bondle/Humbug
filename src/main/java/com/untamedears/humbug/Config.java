@@ -19,7 +19,7 @@ import com.google.common.base.Splitter;
 import com.untamedears.humbug.Humbug;
 import com.untamedears.humbug.annotations.BahHumbug;
 import com.untamedears.humbug.annotations.BahHumbugs;
-import com.untamedears.humbug.annotations.ConfigOption;
+import com.untamedears.humbug.annotations.Option;
 
 public class Config {
   private static Config global_instance_ = null;
@@ -198,7 +198,7 @@ public class Config {
     }
     return ticks;
   }
-  
+
 
   private void loadRemoveItemDrops() {
     if (!config_.isSet("remove_mob_drops")) {
@@ -279,7 +279,7 @@ public class Config {
     }
     return sb.toString();
   }
-  
+
   public void tag_on_join(boolean value){
 	  config_.set("tag_on_join", value);
   }
